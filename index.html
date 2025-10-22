@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>JSON Parse and Stringify Example</h2>
+
+    <script>
+
+        // 1️⃣ JavaScript object
+
+         var student = {
+        "Name": "John",
+        "age": 23,
+        "gender": "male",
+        "subjects": ["Math", "Physics", "Computer"]
+    };
+
+      // 2️⃣ Convert object to JSON string (Stringify)
+
+      var jsonstring = JSON.stringify(student);
+
+      document.write("json string : "+jsonstring+"<br>")
+
+       // 3️⃣ Convert JSON string back to JavaScript object (Parse)
+    var jsonObject = JSON.parse(jsonstring);
+
+    document.write(jsonObject.Name);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
